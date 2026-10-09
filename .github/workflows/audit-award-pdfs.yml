@@ -1,0 +1,59 @@
+name: Audit 16 MathorCup award PDFs
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "feat/award-papers-pdf-audit/**"
+    paths:
+      - "award-paper-audit/extract_layout.py"
+      - "award-paper-audit/tests/**"
+      - "award-paper-audit/README.md"
+      - ".github/workflows/audit-award-pdfs.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: award-papers-audit
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned PDF parser
+        run: python -m pip install "PyMuPDF==1.26.5"
+      - name: Run synthetic contract tests
+        run: python -m unittest discover -s award-paper-audit/tests -p 'test_*.py' -v
+      - name: Parse original award PDF files and assert full inventory
+        run: |
+          python award-paper-audit/extract_layout.py --root . --out award-paper-audit/reports --previews award-paper-audit/private-page-previews
+          python -c "import json,pathlib; p=pathlib.Path('award-paper-audit/reports'); assert json.loads((p/'RUN_SUMMARY.json').read_text())['paper_count']==16; assert len(list((p/'records').glob('*.json')))==16"
+      - name: Upload temporary review-only PDF page previews
+        uses: actions/upload-artifact@v4
+        with:
+          name: selected-16-paper-page-previews
+          path: award-paper-audit/private-page-previews/
+          retention-days: 7
+          if-no-files-found: error
+      - name: Commit machine-only summary on working branch
+        if: startsWith(github.ref, 'refs/heads/feat/award-papers-pdf-audit/')
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add award-paper-audit/reports
+          if git diff --cached --quiet; then
+            echo 'Layout evidence already current'
+          else
+            git commit -m "data: record actual 16-PDF page-level layout extraction"
+            git push origin HEAD:$GITHUB_REF_NAME
+          fi

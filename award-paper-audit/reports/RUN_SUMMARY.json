@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "tool": "PyMuPDF automatic page-level audit",
+  "timestamp_utc": "2026-10-09T11:16:23.368287+00:00",
+  "paper_count": 16,
+  "paper_ids": [
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08"
+  ],
+  "review_status": "machine_parsed_not_human_reviewed",
+  "requires": "Per-page human visual reading, literature judgment, official year rules"
+}
