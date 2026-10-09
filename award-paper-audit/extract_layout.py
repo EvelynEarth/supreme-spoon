@@ -112,7 +112,7 @@ def analyze(rel: str, path: Path, year: int, ordinal: int,
             target = preview_dir / f"{year}-{ordinal:02d}-page-{i+1:03d}.png"
             target.parent.mkdir(parents=True, exist_ok=True)
             page.get_pixmap(matrix=fitz.Matrix(1.3, 1.3), alpha=False).save(target)
-            rendered.append(str(target.relative_to(ROOT)).replace("\\", "/"))
+            rendered.append(target.resolve().relative_to(ROOT).as_posix())
     doc.close()
     fonts = [
         {"font": name, "size_pt": size, "color": color, "characters": count}
