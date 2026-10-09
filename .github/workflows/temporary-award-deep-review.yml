@@ -1,0 +1,45 @@
+name: Temporary 16-PDF deep-review source bundle
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feat/award-deep-reviews-20261009
+    paths:
+      - .github/workflows/temporary-award-deep-review.yml
+
+permissions:
+  contents: read
+
+jobs:
+  sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify original PDF assets, do not modify them
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          files = []
+          for year in (2024,2025):
+              for i in range(1,9):
+                  p = Path(f"{year}年MathorCup大数据竞赛优秀论文/{year}年MathorCup大数据竞赛优秀论文-{i}.pdf")
+                  assert p.is_file() and p.stat().st_size > 100000, str(p)
+                  assert p.open("rb").read(5) == b"%PDF-",str(p)
+                  files.append({"id":f"{year}-{i:02d}","file":str(p),"size":p.stat().st_size,"sha256":hashlib.sha256(p.read_bytes()).hexdigest()})
+          Path("award-deep-review-source-manifest.json").write_text(json.dumps(files,ensure_ascii=False,indent=2),encoding="utf-8")
+          print("Original PDF bytes verified:",len(files),"files",sum(x['size'] for x in files),"bytes")
+          PY
+      - name: Upload temporarily for private research analysis
+        uses: actions/upload-artifact@v4
+        with:
+          name: award-deep-review-original-pdfs
+          path: |
+            2024年MathorCup大数据竞赛优秀论文/*.pdf
+            2025年MathorCup大数据竞赛优秀论文/*.pdf
+            award-deep-review-source-manifest.json
+          retention-days: 1
+          if-no-files-found: error
