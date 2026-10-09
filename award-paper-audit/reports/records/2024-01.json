@@ -1,0 +1,1341 @@
+{
+  "paper_id": "2024-01",
+  "source_path": "2024年MathorCup大数据竞赛优秀论文/2024年MathorCup大数据竞赛优秀论文-1.pdf",
+  "source_sha256": "1194c0dc38dcb9ae73fa94148489051db6ac497dd510b6aadd63c3f7a5558eac",
+  "source_git_blob": "746839a3db6f5e3dfe7f2c9d78a8914170369a54",
+  "source_bytes": 4638893,
+  "page_count": 59,
+  "text_extractable_pages": 57,
+  "OCR_status": "not_attempted",
+  "automated_extraction_status": "partial_or_scanned",
+  "human_full_text_review": "not_completed",
+  "human_visual_review": "not_completed",
+  "page_specific_heading_candidates": [
+    {
+      "page": 4,
+      "short_heading": "1.1 问题背景",
+      "font_size_pt": 12.0,
+      "x_left_pt": 90.0
+    },
+    {
+      "page": 4,
+      "short_heading": "1.2 目标任务",
+      "font_size_pt": 12.0,
+      "x_left_pt": 90.0
+    },
+    {
+      "page": 5,
+      "short_heading": "2.1 模型假设",
+      "font_size_pt": 12.0,
+      "x_left_pt": 90.0
+    },
+    {
+      "page": 5,
+      "short_heading": "2.2 主要的符号说明",
+      "font_size_pt": 12.0,
+      "x_left_pt": 90.0
+    },
+    {
+      "page": 6,
+      "short_heading": "3.1 针对问题一",
+      "font_size_pt": 12.0,
+      "x_left_pt": 90.0
+    },
+    {
+      "page": 7,
+      "short_heading": "3.2 针对问题二",
+      "font_size_pt": 12.0,
+      "x_left_pt": 90.0
+    },
+    {
+      "page": 8,
+      "short_heading": "3.3 针对问题三",
+      "font_size_pt": 12.0,
+      "x_left_pt": 90.0
+    },
+    {
+      "page": 9,
+      "short_heading": "4.1 数据预处理",
+      "font_size_pt": 12.0,
+      "x_left_pt": 90.0
+    },
+    {
+      "page": 9,
+      "short_heading": "4.1.1 数据来源",
+      "font_size_pt": 10.4,
+      "x_left_pt": 90.0
+    },
+    {
+      "page": 9,
+      "short_heading": "18T20:0",
+      "font_size_pt": 7.5,
+      "x_left_pt": 192.4
+    },
+    {
+      "page": 9,
+      "short_heading": "24T14:0",
+      "font_size_pt": 7.5,
+      "x_left_pt": 230.6
+    },
+    {
+      "page": 9,
+      "short_heading": "23T08:0",
+      "font_size_pt": 7.5,
+      "x_left_pt": 268.3
+    },
+    {
+      "page": 9,
+      "short_heading": "18T20:0",
+      "font_size_pt": 7.5,
+      "x_left_pt": 192.4
+    },
+    {
+      "page": 9,
+      "short_heading": "24T14:0",
+      "font_size_pt": 7.5,
+      "x_left_pt": 230.6
+    },
+    {
+      "page": 9,
+      "short_heading": "23T14:0",
+      "font_size_pt": 7.5,
+      "x_left_pt": 268.3
+    },
+    {
+      "page": 9,
+      "short_heading": "18T20:0",
+      "font_size_pt": 7.5,
+      "x_left_pt": 192.4
+    },
+    {
+      "page": 9,
+      "short_heading": "24T14:0",
+      "font_size_pt": 7.5,
+      "x_left_pt": 230.6
+    },
+    {
+      "page": 9,
+      "short_heading": "23T17:0",
+      "font_size_pt": 7.5,
+      "x_left_pt": 268.3
+    },
+    {
+      "page": 10,
+      "short_heading": "4.1.2 数据过滤",
+      "font_size_pt": 10.4,
+      "x_left_pt": 90.0
+    },
+    {
+      "page": 11,
+      "short_heading": "4.1.3 数据清洗与缺失值处理",
+      "font_size_pt": 10.4,
+      "x_left_pt": 90.0
+    },
+    {
+      "page": 12,
+      "short_heading": "4.1.4 数据整合",
+      "font_size_pt": 10.4,
+      "x_left_pt": 90.0
+    },
+    {
+      "page": 14,
+      "short_heading": "4.2 特征提取",
+      "font_size_pt": 12.0,
+      "x_left_pt": 90.0
+    },
+    {
+      "page": 14,
+      "short_heading": "4.2.1 原始数据局限与特征提取的必要性",
+      "font_size_pt": 10.4,
+      "x_left_pt": 90.0
+    },
+    {
+      "page": 14,
+      "short_heading": "4.2.2 搭建特征空间",
+      "font_size_pt": 10.4,
+      "x_left_pt": 90.0
+    }
+  ],
+  "font_size_color_samples": [
+    {
+      "font": "SimSun",
+      "size_pt": 10.4,
+      "color": "#000000",
+      "characters": 45595
+    },
+    {
+      "font": "SimSun",
+      "size_pt": 11.1,
+      "color": "#000000",
+      "characters": 3499
+    },
+    {
+      "font": "CambriaMath",
+      "size_pt": 10.4,
+      "color": "#000000",
+      "characters": 1444
+    },
+    {
+      "font": "KaiTi",
+      "size_pt": 10.4,
+      "color": "#000000",
+      "characters": 1404
+    },
+    {
+      "font": "SimSun",
+      "size_pt": 9.0,
+      "color": "#000000",
+      "characters": 1392
+    },
+    {
+      "font": "DengXian",
+      "size_pt": 10.4,
+      "color": "#000000",
+      "characters": 1371
+    },
+    {
+      "font": "CambriaMath",
+      "size_pt": 7.5,
+      "color": "#000000",
+      "characters": 1229
+    },
+    {
+      "font": "SimSun",
+      "size_pt": 7.5,
+      "color": "#000000",
+      "characters": 849
+    },
+    {
+      "font": "SimSun",
+      "size_pt": 12.0,
+      "color": "#000000",
+      "characters": 778
+    },
+    {
+      "font": "SimSun",
+      "size_pt": 14.1,
+      "color": "#000000",
+      "characters": 90
+    },
+    {
+      "font": "SimSun",
+      "size_pt": 5.3,
+      "color": "#000000",
+      "characters": 18
+    },
+    {
+      "font": "Calibri",
+      "size_pt": 10.4,
+      "color": "#000000",
+      "characters": 5
+    }
+  ],
+  "page_structure_counts": [
+    {
+      "page": 1,
+      "text_characters": 1431,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 7,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        337.3
+      ]
+    },
+    {
+      "page": 2,
+      "text_characters": 2560,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        100.4,
+        100.4,
+        111.0,
+        111.0,
+        111.0
+      ]
+    },
+    {
+      "page": 3,
+      "text_characters": 1480,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        100.4,
+        100.4,
+        111.0,
+        111.0,
+        111.0
+      ]
+    },
+    {
+      "page": 4,
+      "text_characters": 1092,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        111.0
+      ]
+    },
+    {
+      "page": 5,
+      "text_characters": 438,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 3,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        89.3,
+        90.0,
+        90.0,
+        111.0,
+        111.0,
+        192.0,
+        234.4
+      ]
+    },
+    {
+      "page": 6,
+      "text_characters": 782,
+      "fig_label_count": 1,
+      "table_label_count": 0,
+      "image_object_count": 1,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        283.6
+      ]
+    },
+    {
+      "page": 7,
+      "text_characters": 792,
+      "fig_label_count": 1,
+      "table_label_count": 0,
+      "image_object_count": 1,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0
+      ]
+    },
+    {
+      "page": 8,
+      "text_characters": 723,
+      "fig_label_count": 1,
+      "table_label_count": 0,
+      "image_object_count": 1,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0
+      ]
+    },
+    {
+      "page": 9,
+      "text_characters": 1037,
+      "fig_label_count": 0,
+      "table_label_count": 3,
+      "image_object_count": 0,
+      "vector_path_count": 6,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        68.2,
+        113.0,
+        198.0,
+        238.1,
+        307.3,
+        394.4,
+        531.0
+      ]
+    },
+    {
+      "page": 10,
+      "text_characters": 941,
+      "fig_label_count": 2,
+      "table_label_count": 1,
+      "image_object_count": 2,
+      "vector_path_count": 6,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.1,
+        143.2,
+        238.0,
+        321.8,
+        399.7,
+        445.9
+      ]
+    },
+    {
+      "page": 11,
+      "text_characters": 675,
+      "fig_label_count": 3,
+      "table_label_count": 0,
+      "image_object_count": 2,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        111.0,
+        283.6
+      ]
+    },
+    {
+      "page": 12,
+      "text_characters": 752,
+      "fig_label_count": 2,
+      "table_label_count": 0,
+      "image_object_count": 2,
+      "vector_path_count": 1,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        111.0,
+        239.5
+      ]
+    },
+    {
+      "page": 13,
+      "text_characters": 822,
+      "fig_label_count": 2,
+      "table_label_count": 0,
+      "image_object_count": 2,
+      "vector_path_count": 6,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        229.0,
+        283.6,
+        331.4
+      ]
+    },
+    {
+      "page": 14,
+      "text_characters": 910,
+      "fig_label_count": 1,
+      "table_label_count": 0,
+      "image_object_count": 1,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        111.0
+      ]
+    },
+    {
+      "page": 15,
+      "text_characters": 1203,
+      "fig_label_count": 0,
+      "table_label_count": 1,
+      "image_object_count": 0,
+      "vector_path_count": 12,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        84.4,
+        90.0,
+        90.0,
+        170.4,
+        216.6,
+        451.7,
+        490.2
+      ]
+    },
+    {
+      "page": 16,
+      "text_characters": 1316,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 4,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        84.4,
+        90.0,
+        111.0,
+        170.4,
+        283.6,
+        433.2,
+        464.8
+      ]
+    },
+    {
+      "page": 17,
+      "text_characters": 820,
+      "fig_label_count": 1,
+      "table_label_count": 1,
+      "image_object_count": 1,
+      "vector_path_count": 14,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        81.4,
+        90.0,
+        90.0,
+        111.0,
+        194.0,
+        194.0,
+        344.4
+      ]
+    },
+    {
+      "page": 18,
+      "text_characters": 735,
+      "fig_label_count": 2,
+      "table_label_count": 1,
+      "image_object_count": 3,
+      "vector_path_count": 16,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        81.0,
+        90.0,
+        94.2,
+        111.0,
+        200.9,
+        253.4,
+        342.6
+      ]
+    },
+    {
+      "page": 19,
+      "text_characters": 794,
+      "fig_label_count": 4,
+      "table_label_count": 0,
+      "image_object_count": 4,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        111.0,
+        272.0
+      ]
+    },
+    {
+      "page": 20,
+      "text_characters": 1178,
+      "fig_label_count": 0,
+      "table_label_count": 1,
+      "image_object_count": 0,
+      "vector_path_count": 10,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        115.2,
+        283.6
+      ]
+    },
+    {
+      "page": 21,
+      "text_characters": 607,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 7,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        193.8
+      ]
+    },
+    {
+      "page": 22,
+      "text_characters": 1025,
+      "fig_label_count": 1,
+      "table_label_count": 0,
+      "image_object_count": 1,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        283.6
+      ]
+    },
+    {
+      "page": 23,
+      "text_characters": 519,
+      "fig_label_count": 2,
+      "table_label_count": 0,
+      "image_object_count": 2,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        111.0
+      ]
+    },
+    {
+      "page": 24,
+      "text_characters": 995,
+      "fig_label_count": 1,
+      "table_label_count": 0,
+      "image_object_count": 1,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        111.0
+      ]
+    },
+    {
+      "page": 25,
+      "text_characters": 1753,
+      "fig_label_count": 0,
+      "table_label_count": 1,
+      "image_object_count": 0,
+      "vector_path_count": 6,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        70.9,
+        90.0,
+        111.0,
+        124.3,
+        124.3,
+        426.4,
+        426.4
+      ]
+    },
+    {
+      "page": 26,
+      "text_characters": 1528,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 34,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        70.9,
+        124.3,
+        163.4,
+        207.2,
+        297.0,
+        399.6,
+        426.4
+      ]
+    },
+    {
+      "page": 27,
+      "text_characters": 1257,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 1,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        105.7,
+        111.0
+      ]
+    },
+    {
+      "page": 28,
+      "text_characters": 1314,
+      "fig_label_count": 2,
+      "table_label_count": 1,
+      "image_object_count": 0,
+      "vector_path_count": 9,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        154.0,
+        369.8
+      ]
+    },
+    {
+      "page": 29,
+      "text_characters": 1124,
+      "fig_label_count": 1,
+      "table_label_count": 0,
+      "image_object_count": 1,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        111.0
+      ]
+    },
+    {
+      "page": 30,
+      "text_characters": 63,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        283.6
+      ]
+    },
+    {
+      "page": 31,
+      "text_characters": 435,
+      "fig_label_count": 3,
+      "table_label_count": 0,
+      "image_object_count": 3,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        202.8,
+        283.6
+      ]
+    },
+    {
+      "page": 32,
+      "text_characters": 595,
+      "fig_label_count": 3,
+      "table_label_count": 0,
+      "image_object_count": 3,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        111.0
+      ]
+    },
+    {
+      "page": 33,
+      "text_characters": 1003,
+      "fig_label_count": 1,
+      "table_label_count": 0,
+      "image_object_count": 1,
+      "vector_path_count": 5,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        70.6,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0
+      ]
+    },
+    {
+      "page": 34,
+      "text_characters": 847,
+      "fig_label_count": 1,
+      "table_label_count": 0,
+      "image_object_count": 1,
+      "vector_path_count": 2,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        70.6,
+        90.0,
+        127.2,
+        208.4,
+        289.7,
+        426.0
+      ]
+    },
+    {
+      "page": 35,
+      "text_characters": 1361,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        283.6
+      ]
+    },
+    {
+      "page": 36,
+      "text_characters": 1004,
+      "fig_label_count": 1,
+      "table_label_count": 0,
+      "image_object_count": 1,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        283.6
+      ]
+    },
+    {
+      "page": 37,
+      "text_characters": 889,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        105.7,
+        111.0
+      ]
+    },
+    {
+      "page": 38,
+      "text_characters": 1341,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        89.2,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        255.5
+      ]
+    },
+    {
+      "page": 39,
+      "text_characters": 1109,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        283.6
+      ]
+    },
+    {
+      "page": 40,
+      "text_characters": 1087,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        121.4,
+        283.6
+      ]
+    },
+    {
+      "page": 41,
+      "text_characters": 1099,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0
+      ]
+    },
+    {
+      "page": 42,
+      "text_characters": 1127,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        211.0
+      ]
+    },
+    {
+      "page": 43,
+      "text_characters": 1173,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0
+      ]
+    },
+    {
+      "page": 44,
+      "text_characters": 1325,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        174.0
+      ]
+    },
+    {
+      "page": 45,
+      "text_characters": 989,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        111.0
+      ]
+    },
+    {
+      "page": 46,
+      "text_characters": 455,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        111.0,
+        111.0,
+        111.0,
+        111.0,
+        111.0,
+        111.0,
+        111.0
+      ]
+    },
+    {
+      "page": 47,
+      "text_characters": 634,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        111.0,
+        111.0,
+        111.0,
+        111.0,
+        111.0,
+        111.0,
+        111.0
+      ]
+    },
+    {
+      "page": 48,
+      "text_characters": 921,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        111.0,
+        111.0,
+        111.0,
+        111.0,
+        111.0,
+        111.0
+      ]
+    },
+    {
+      "page": 49,
+      "text_characters": 575,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        111.0,
+        111.0,
+        111.0,
+        111.0,
+        111.0,
+        111.0,
+        111.0
+      ]
+    },
+    {
+      "page": 50,
+      "text_characters": 981,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        111.0,
+        111.0,
+        283.6
+      ]
+    },
+    {
+      "page": 51,
+      "text_characters": 868,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        132.0,
+        342.0
+      ]
+    },
+    {
+      "page": 52,
+      "text_characters": 1007,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        111.0
+      ]
+    },
+    {
+      "page": 53,
+      "text_characters": 1485,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        111.0,
+        111.0,
+        111.0,
+        111.0,
+        111.0,
+        111.0,
+        111.0
+      ]
+    },
+    {
+      "page": 54,
+      "text_characters": 944,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        283.6
+      ]
+    },
+    {
+      "page": 55,
+      "text_characters": 1061,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        111.0,
+        447.6
+      ]
+    },
+    {
+      "page": 56,
+      "text_characters": 820,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        132.0,
+        153.0
+      ]
+    },
+    {
+      "page": 57,
+      "text_characters": 882,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        90.0,
+        90.0,
+        90.0,
+        111.0,
+        132.0,
+        132.0
+      ]
+    },
+    {
+      "page": 58,
+      "text_characters": 1002,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        90.0,
+        132.0,
+        132.0,
+        132.0,
+        132.0,
+        274.0,
+        500.0
+      ]
+    },
+    {
+      "page": 59,
+      "text_characters": 10,
+      "fig_label_count": 0,
+      "table_label_count": 0,
+      "image_object_count": 0,
+      "vector_path_count": 0,
+      "page_width_pt": 595.3,
+      "page_height_pt": 841.9,
+      "text_left_percentiles_pt": [
+        283.6
+      ]
+    }
+  ],
+  "temporary_visual_preview": [
+    "award-paper-audit/private-page-previews/2024-01-page-001.png",
+    "award-paper-audit/private-page-previews/2024-01-page-002.png",
+    "award-paper-audit/private-page-previews/2024-01-page-030.png"
+  ],
+  "interpretation_limitations": "Machine page and font statistics cannot identify academic quality, correct heading semantics, font names faithfully, or official award formatting. Human reading and visual inspection with recorded pages are still required."
+}
